@@ -1,0 +1,255 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+
+/* ==========================================================================
+   Base styles:
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   CUSTOM STYLES
+   ========================================================================== */
+
+/*0. Typography styles*/
+
+h1, h2, h3, p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* 1. Navigation */
+
+.top-navigation {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    height: 71px;
+    width: 100%;
+}
+
+.nav-container {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.logo-container {
+    width: 20%;
+    float: left;
+}
+
+.logo-img {
+    height: 70px;
+    width: 26px;
+    margin-left: 15px;
+}
+
+.nav-links {
+    width: 80%;
+    float: right;
+    margin-top: 5px;
+}
+
+.nav-links ul {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.04em;
+    font-weight: 300;
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: #838994;
+    text-decoration: none;
+}
+
+/* Hero area */
+
+.hero {
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 45rem;
+    width: 100%;
+    text-align: center;
+    overflow: auto;
+}
+
+.hero-content {
+    box-sizing: border-box;
+}
+
+.hero h1 {
+    font-weight: 300;
+    font-size: 3em;
+    color: white;
+    margin-top: 280px;
+}
+
+.hero h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 1.563rem;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
