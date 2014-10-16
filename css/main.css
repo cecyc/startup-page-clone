@@ -109,22 +109,24 @@ textarea {
    CUSTOM STYLES
    ========================================================================== */
 
-/*0. Typography styles*/
+
+/*1. Typography styles*/
 
 h1, h2, h3, p {
     font-family: 'Roboto', sans-serif;
 }
 
-/* 1. Navigation */
+/* 2. Navigation */
 
 .top-navigation {
     background-color: #fff;
     height: 71px;
     width: 100%;
+    position: fixed;
 }
 
 .nav-container {
-    max-width: 740px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -163,7 +165,7 @@ h1, h2, h3, p {
     text-decoration: none;
 }
 
-/* Hero area */
+/* 3. Hero area */
 
 .hero {
     background-image: url('../img/background.jpg');
@@ -237,6 +239,44 @@ button:hover {
     margin-left: 1rem;
     font-weight: 500;
     font-size: 1.125rem;
+}
+
+/*4. Features*/
+
+.features {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 2.75rem;
+    font-weight: 300;
+    margin-top: 6rem;
+}
+
+.features h3 {
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.devices ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.devices li {
+    width: 32%;
+    display: inline-block;
+}
+
+.devices p {
+    font-weight: 300;
+    font-size: 1.125rem;
+}
+
+.icons {
+    width: 127px;
 }
 
 /* ==========================================================================
