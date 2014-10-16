@@ -110,7 +110,7 @@ textarea {
    ========================================================================== */
 
 
-/*1. Typography styles*/
+/*1. Typography styles */
 
 h1, h2, h3, p {
     font-family: 'Roboto', sans-serif;
@@ -241,7 +241,7 @@ button:hover {
     font-size: 1.125rem;
 }
 
-/*4. Features*/
+/*4. Features */
 
 .features {
     max-width: 850px;
@@ -279,11 +279,44 @@ button:hover {
     width: 127px;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+/*5. Buy now */
+
+.buy-now {
+    background: url(../img/buy-now-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 45rem;
+    width: 100%;
+}
+
+.buy-now .content {
+    width: 850px;
+    margin: 0 auto;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    padding-top: 2rem;
+}
+
+.copy {
+    width: 240px;
+    text-align: left;
+}
+
+.buy-now h2 {
+    font-weight: 400;
+    font-size: 1.563rem;
+    color: #f15a29;
+    margin: 2.5rem 0px 1.875rem;
+}
+
+.buy-now p {
+    font-weight: 300;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    color: #4c5058;
+}
+
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
