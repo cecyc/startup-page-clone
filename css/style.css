@@ -1,47 +1,277 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain) */
+/* ==========================================================================
+   CUSTOM STYLES
+   ========================================================================== */
+/*0. Global styles*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+.content {
+    max-width: 850px;
+    margin: 0 auto;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-  display: block;
+
+h1, h2, h3, p {
+    font-family: 'Roboto', sans-serif;
 }
-body {
-  line-height: 1;
+
+p {
+    font-weight: 300;
 }
-ol, ul {
-  list-style: none;
+
+/* 2. Navigation */
+
+.top-navigation {
+    background-color: #fff;
+    max-height: 95px;
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid #ddd;
 }
-blockquote, q {
-  quotes: none;
+
+.top-navigation > .content {
+    padding: 0 15px;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
+
+.logo-container {
+    width: 20%;
+    float: left;
 }
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+
+.logo-img {
+    height: 70px;
+    width: 26px;
+    margin-left: 15px;
 }
+
+.nav-links {
+    width: 80%;
+    float: right;
+    margin-top: 5px;
+}
+
+.nav-links ul {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.04em;
+    font-weight: 300;
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: #838994;
+    text-decoration: none;
+}
+
+/* 3. Hero area */
+
+.hero {
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 45rem;
+    width: 100%;
+    text-align: center;
+    overflow: auto;
+}
+
+.hero > .content {
+    box-sizing: border-box;
+}
+
+.hero h1 {
+    font-weight: 300;
+    font-size: 3em;
+    color: white;
+    margin-top: 280px;
+}
+
+.hero h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 1.563rem;
+    -webkit-font-smoothing: antialiased;
+}
+
+.buttons {
+    max-width: 500px;
+    margin: 0 auto; 
+}
+
+.learn-more {
+    float: left;
+    width: 250px;
+}
+
+button {
+    color: white;
+    background-color: #f15a29;
+    border: #f15a29;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    font-size: 1.125rem;
+    width: 9.688rem;
+}
+
+button:hover {
+    background-color: #d9400e;
+}
+
+.watch {
+    float: right;
+    width: 250px;
+    padding-top: .6rem;
+
+}
+
+.watch p {
+    color: white;
+    display: inline;
+    margin-left: 1rem;
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.play {
+    height: 35px;
+    display: inline;
+}
+
+/*4. Features */
+
+.features > .content {
+    padding-bottom: 3rem;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 2.75rem;
+    font-weight: 300;
+    margin-top: 6rem;
+}
+
+.features h3 {
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.devices ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.devices li {
+    width: 32%;
+    display: inline-block;
+}
+
+.devices p {
+    font-size: 1.125rem;
+}
+
+.icons {
+    width: 127px;
+}
+
+/*5. Buy now */
+
+.buy-now {
+    background: url(../img/buy-now-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 45rem;
+    width: 100%;
+}
+
+.buy-now > .content {
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    padding-top: 2rem;
+}
+
+.value-prop {
+    width: 240px;
+    text-align: left;
+}
+
+.buy-now h2 {
+    font-weight: 400;
+    font-size: 1.563rem;
+    color: #f15a29;
+    margin: 2.5rem 0px 1.875rem;
+}
+
+.buy-now p {
+        font-size: 1.15rem;
+    line-height: 1.5;
+    color: #4c5058;
+}
+
+/*6. Footer */
+
+footer {
+    background-color: #fff;
+    width: 100%;
+    padding-bottom: 5rem;
+}
+
+footer > .content {
+    text-align: center;
+}
+
+footer h4 {
+    font-weight: 400;
+}
+
+.list {
+    width: 32%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+.list a {
+    color: #838994;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.list a:hover {
+    color: #f15a29;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    display: inline-block;
+    margin: 0 5px 0 5px;
+    border: 1px solid #eaebec;
+    border-radius: 100%;
+    width: 38px;
+    height: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.twitter {
+    color: #55acee;
+}
+
+.facebook {
+    color: #4c66a4;
+}
+
+.instagram {
+    color: #3f729b;
+}
+
+
+
+
