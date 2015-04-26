@@ -1,4 +1,6 @@
 Startup Page Clone assignment
 ==================
 
-Startup page clone of Karma website for Thinkful's frontend program
+This is a clone of Karma app's website for Thinkful's frontend course.
+
+Link: [http://cecyc.github.io/startup-page-clone/](http://cecyc.github.io/startup-page-clone/)
